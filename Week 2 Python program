@@ -6,12 +6,12 @@ Write a Python function primeproduct(m) that takes an integer m as input and ret
 def primeproduct(m):
     temp=[]    
     if m>=2:
-        for i in range(2,m):
-            if m%i==0:                
-                temp+=[i]            
+        for x in range(2,m):
+            if m%x==0:                
+                temp+=[x]            
         if len(temp)==2:
-            if m==l[0]*l[1]:
-                if [1]%temp[0]==0:
+            if m==temp[0]*temp[1]:
+                if temp[1]%temp[0]==0:
                     return False
                 return True
         elif len(temp)==1:
